@@ -42,7 +42,7 @@ public class Main {
         System.out.println("-");
         System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
-        System.out.println("XP:" + devCamila.calcularTotalXp());
+        System.out.println("XP:" + devCamila.getTotalXp());
 
         System.out.println("-------");
 
@@ -56,8 +56,22 @@ public class Main {
         System.out.println("-");
         System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
         System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
-        System.out.println("XP:" + devJoao.calcularTotalXp());
+        System.out.println("XP:" + devJoao.getTotalXp());
 
+        System.out.println("-------");
+        System.out.println("Lógicas adicionadas por Edilberto");
+        System.out.println("Devs inscritos no " + bootcamp.getNome() + ":");
+        bootcamp.listarDevsInscritos();
+        System.out.println("Conteudos Concluídos da Camila: ");
+        devCamila.listarConteudosConcluidos();
+        System.out.println("Conteudos Concluídos do Joao: ");
+        devJoao.listarConteudosConcluidos();
+        System.out.println("Ranking do " + bootcamp.getNome() + ":");
+        bootcamp.listarRanking();
+        System.out.println("Imprimir Certificado do Joao");
+        devJoao.imprimirCertificadoConclusao();
+        System.out.println("Imprimir Certificado da Camila");
+        devCamila.imprimirCertificadoConclusao();
     }
 
 }
